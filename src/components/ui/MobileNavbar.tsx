@@ -8,7 +8,7 @@ import { House, User, PencilRuler, FileText, Mail } from "lucide-react";
 const items = [
   {
     id: "landing",
-    href: "#landing",
+    href: "/#landing",
     label: "Home",
     icon: House,
     color: "#F5E1CD",
@@ -16,7 +16,7 @@ const items = [
   },
   {
     id: "about",
-    href: "#about",
+    href: "/#about",
     label: "About",
     icon: User,
     color: "#E9D3BB",
@@ -24,7 +24,7 @@ const items = [
   },
   {
     id: "projects",
-    href: "#projects",
+    href: "/#projects",
     label: "Projects",
     icon: PencilRuler,
     color: "#F4E0CC",
@@ -32,7 +32,7 @@ const items = [
   },
   {
     id: "resume",
-    href: "#resume",
+    href: "/#resume",
     label: "Resume",
     icon: FileText,
     color: "#F5E1CD",
@@ -40,7 +40,7 @@ const items = [
   },
   {
     id: "contact",
-    href: "#contact",
+    href: "/#contact",
     label: "Contact",
     icon: Mail,
     color: "#F5E1CD",

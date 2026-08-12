@@ -7,10 +7,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { COLORS } from "@/lib/colors";
 
 const navItems = [
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Resume", href: "#resume" },
+  { name: "About", href: "/#about" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Resume", href: "/#resume" },
 ];
 
 export default function Navbar() {
