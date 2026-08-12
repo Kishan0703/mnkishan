@@ -9,11 +9,86 @@ import { Toaster } from "sonner";
 import { LoadingProvider } from "@/context/LoadingContext";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
+const siteUrl = "https://www.kishanmn.dev/";
+const siteTitle = "Kishan MN | Software Engineer Portfolio";
+const siteDescription =
+  "Portfolio of Kishan MN, a software engineer building AI tools, machine learning systems, full-stack products, analytics platforms, and blockchain infrastructure.";
+const previewImage = "/projects/Portfolio.png";
+const sameAs = [
+  "https://github.com/Kishan0703/",
+  "https://www.linkedin.com/in/kishan-mn-898b67334",
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Kishan MN",
+    url: siteUrl,
+    image: `${siteUrl}images/Avatar.png`,
+    sameAs,
+    jobTitle: "Software Engineer",
+    knowsAbout: [
+      "AI tools",
+      "Machine learning",
+      "Full-stack development",
+      "Analytics systems",
+      "Blockchain infrastructure",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Kishan MN Portfolio",
+    url: siteUrl,
+    description: siteDescription,
+    author: {
+      "@type": "Person",
+      name: "Kishan MN",
+      url: siteUrl,
+    },
+  },
+];
 
 export const metadata: Metadata = {
-  title: "Portfolio | Kishan MN",
-  description:
-    "Kishan MN's portfolio across AI tools, full-stack systems, machine learning, analytics and blockchain infrastructure.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s | Kishan MN",
+  },
+  description: siteDescription,
+  alternates: {
+    canonical: siteUrl,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "Kishan MN Portfolio",
+    type: "website",
+    images: [
+      {
+        url: previewImage,
+        width: 2541,
+        height: 1337,
+        alt: "Kishan MN portfolio preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [previewImage],
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +104,12 @@ export default function RootLayout({
       <body
         className={`flex min-h-full flex-col ${meddon.variable} ${gochi.variable} ${splash.variable} ${bree.variable}`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <Toaster position="bottom-right" theme="dark" richColors />
         <LoadingProvider>
           <ClickSpark
