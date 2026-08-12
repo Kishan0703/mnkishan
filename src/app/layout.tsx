@@ -1,0 +1,47 @@
+import type { Metadata } from "next";
+import { gochi, splash, bree, meddon } from "@/lib/fonts";
+import "./globals.css";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+import ClickSpark from "@/components/ui/ClickSpark";
+import { COLORS } from "@/lib/colors";
+import { Toaster } from "sonner";
+import { LoadingProvider } from "@/context/LoadingContext";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
+
+export const metadata: Metadata = {
+  title: "Portfolio | Kishan MN",
+  description:
+    "Kishan MN's portfolio across AI tools, full-stack systems, machine learning, analytics and blockchain infrastructure.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={cn("h-full", "antialiased", "font-sans", geist.variable)}
+    >
+      <body
+        className={`flex min-h-full flex-col ${meddon.variable} ${gochi.variable} ${splash.variable} ${bree.variable}`}
+      >
+        <Toaster position="bottom-right" theme="dark" richColors />
+        <LoadingProvider>
+          <ClickSpark
+            sparkColor={COLORS.secondary}
+            sparkSize={12}
+            sparkRadius={15}
+            sparkCount={8}
+            duration={400}
+          >
+            {children}
+          </ClickSpark>
+        </LoadingProvider>
+      </body>
+    </html>
+  );
+}
