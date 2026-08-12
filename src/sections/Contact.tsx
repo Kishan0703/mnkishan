@@ -1,0 +1,27 @@
+import IPhone from "@/components/Social_Contact/IPhone";
+import Macbook from "@/components/Social_Contact/Macbook";
+import SectionHeader from "@/components/ui/SectionHeading";
+import React from "react";
+import Doodle from "@/components/ui/Doodle";
+
+export default function Contact() {
+  return (
+    <div className="relative flex min-h-screen flex-col pb-12">
+      {/* Header Section */}
+      <SectionHeader id="contact" title="~/connect" />
+      <Doodle src="/doodles/Red_Plant.png" width={170} x={15} y={10} rotation={11} />
+      <Doodle src="/doodles/Juice.png" width={170} x={85} y={15} rotation={-19} />
+      <Doodle src="/doodles/Computer.png" width={170} x={60} y={50} rotation={24} />
+      <Doodle src="/doodles/Mech.png" width={170} x={75} y={65} rotation={-15} />
+      <Doodle src="/doodles/CofeeStain.png" width={320} x={5} y={85} rotation={7} />
+      <Doodle src="/doodles/Red_Frog.png" width={300} x={50} y={105} rotation={2} />
+
+      <div className="hidden lg:flex w-full h-full overflow-hidden flex-1 items-center justify-center px-6 lg:px-16">
+        <Macbook />
+      </div>
+      <div className="flex lg:hidden w-full h-full overflow-hidden flex-1 items-center justify-center px-6 lg:px-16">
+        <IPhone />
+      </div>
+    </div>
+  );
+}
