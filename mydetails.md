@@ -9,18 +9,18 @@ Use this file as source content for another portfolio website. It is about the i
 **Role / Title:** AI, Full-Stack, ML and Blockchain Builder
 
 **Short headline:**  
-I build technical products across AI developer tools, fraud detection, RAG systems, blockchain infrastructure, analytics platforms, and applied machine learning.
+I build technical products across fraud detection, RAG systems, blockchain infrastructure, analytics platforms, and applied machine learning.
 
 **Short about:**  
 I'm a software engineer focused on AI and ML, with a strong interest in building complete systems around them. I enjoy working across the stack, from models and data pipelines to APIs, interfaces, and the infrastructure that connects them.
 
 **Longer bio:**  
-Developer focused on public, implementation-heavy projects: AI-powered pull request review, UPI-style fraud monitoring, tree-based document Q&A, smart API mocking, chess analysis, cardiac risk prediction, and ward-level mobility analytics.
+Developer focused on public, implementation-heavy projects: UPI-style fraud monitoring, tree-based document Q&A, smart API mocking, chess analysis, cardiac risk prediction, and ward-level mobility analytics.
 
 My work tends to combine full-stack product engineering with applied AI/ML systems: React and TypeScript frontends, FastAPI or Node.js backends, model integrations, dashboards, real-time data flows, and deployment-ready project structure.
 
 **Current focus:**  
-Working on repository analysis, LLM-backed review flows, background jobs, dashboards, webhooks, and deployment-ready full-stack architecture.
+Working on applied AI/ML systems, dashboards, backend APIs, data workflows, and deployment-ready full-stack architecture.
 
 ## Education
 
@@ -35,29 +35,23 @@ Expected graduation: 2028
 
 ## Main Positioning Themes
 
-### AI Tools
-
-Built LGTM, an AI-powered PR review and security platform with repository indexing, LLM-backed review flows, security checks, GitHub webhooks, background jobs, and real-time dashboard updates.
-
 ### Data Systems
 
 Created risk and analytics systems such as UPI Risk Sentinel and DriverPulse, combining transaction simulation, graph analysis, fraud-ring detection, ML scoring, SHAP explanations, and investigation dashboards.
 
 ### Web3 and Product
 
-Built Stellar-based payroll and bounty infrastructure, plus product-focused web apps for API mocking, hackathon operations, agriculture assistance, and AI-assisted chess coaching.
+Built Stellar-based bounty infrastructure, plus product-focused web apps for API mocking, document Q&A, analytics, and AI-assisted chess coaching.
 
 ## Timeline
 
-### 2026 - Now: AI developer tools and full-stack systems
+### 2026 - Now: Applied AI and full-stack systems
 
-Current build focus: repository analysis, LLM-backed review flows, background jobs, dashboards, webhooks, and deployment-ready full-stack architecture.
-
-Featured project: LGTM, an AI-powered PR review and security platform with AST-based repository indexing, code knowledge graph, LLM-powered review, GitHub integration, security gates, queues, Redis, Socket.IO, and analytics.
+Current build focus: applied AI/ML systems, dashboards, backend APIs, data workflows, and deployment-ready full-stack architecture.
 
 ### 2026: Blockchain and payment flows
 
-Explored wallet integration, Stellar Testnet payments, Soroban/Rust contracts, multi-signature approvals, escrow-style bounty releases, and GitHub-triggered payouts.
+Explored wallet integration, Stellar Testnet payments, Soroban/Rust contracts, escrow-style bounty releases, and GitHub-triggered payouts.
 
 ### 2025 - 2026: ML, fraud graphs and analytics
 
@@ -98,29 +92,6 @@ Built practice around React, Next.js, TypeScript, Tailwind CSS, Node.js, FastAPI
 - Tech: FastAPI, Python, REST APIs, MongoDB
 
 ## Projects
-
-### LGTM
-
-**Tagline:** AI-powered PR review and security platform
-
-**Description:**  
-Full-stack GitHub-integrated review platform with AST-based repository indexing, code knowledge graph, LLM reviews, security scanning, CI/CD protection, background jobs, and real-time dashboard updates.
-
-**Tech stack:** React, TypeScript, Node.js, MongoDB, Redis, BullMQ, Tree-sitter, OpenAI
-
-**GitHub:** https://github.com/Kishan0703/pr_shield
-
-### Orbit Ledger
-
-**Tagline:** On-chain payroll infrastructure
-
-**Description:**  
-Stellar Testnet payroll dApp with wallet integration, live balances, a Rust Soroban treasury contract, proposal/approval/execution payroll flow, multi-signature release, and currency value display.
-
-**Tech stack:** React, Vite, Rust, Soroban, Stellar, Freighter, CoinGecko
-
-**GitHub:** https://github.com/Kishan0703/Orbit_Ledger  
-**Live demo:** https://stellarpay.vercel.app/
 
 ### UPI Risk Sentinel
 
@@ -218,18 +189,6 @@ Decentralized bounty platform for rewarding open-source contributions with USDC 
 
 **GitHub:** https://github.com/Kishan0703/stellar-GitHub-Bounty-Board
 
-### Nirmaan 2026
-
-**Tagline:** Hackathon website and event platform
-
-**Description:**  
-Design-led national-level student hackathon website covering tracks, timeline, sponsors, submissions, venue, teams, demo-day flow, registration, modal interactions, and motion-driven sections.
-
-**Tech stack:** Next.js, React, TypeScript, Tailwind CSS, Framer Motion, Lucide React
-
-**GitHub:** https://github.com/Kishan0703/Nirmaan_2026  
-**Live demo:** https://nirmaan-2026-tau.vercel.app/
-
 ### DriverPulse
 
 **Tagline:** Namma Yatri ward-level insights
@@ -263,17 +222,6 @@ An implementation of approximate LLM unlearning based on the "Who's Harry Potter
 **Tech stack:** Python, PyTorch, Hugging Face, Phi-2, QLoRA, Gemini API, Jupyter
 
 **GitHub:** https://github.com/Kishan0703/unlearn-llm
-
-### AgriTech AI
-
-**Tagline:** Smart farming assistant
-
-**Description:**  
-Smart farming platform combining multilingual AI assistance, crop advisory, plant disease detection, fertilizer and irrigation planning, real-time weather alerts, and separate web/API/ML services.
-
-**Tech stack:** React, Node.js, Express, MongoDB, Flask, TensorFlow, PyTorch, Gemini
-
-**GitHub:** https://github.com/Kishan0703/agri-smart-inception
 
 ## Recommended Project Order
 

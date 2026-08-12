@@ -57,15 +57,6 @@ export const resumeData: ResumeData = {
       ],
     },
     {
-      name: "Orbit Ledger",
-      stack: ["React", "Vite", "Rust", "Soroban", "Stellar"],
-      type: "Web3",
-      points: [
-        "Stellar Testnet payroll dApp with wallet integration and live balances.",
-        "Treasury contract with proposal, approval and execution payroll flow.",
-      ],
-    },
-    {
       name: "DriverPulse",
       stack: ["Python", "Pandas", "Scikit-learn", "FastAPI", "React"],
       type: "Analytics",

@@ -97,7 +97,7 @@ export const SKILL_DATA: SkillEntry[] = [
     ],
     achievements: [
       "Built complete AI/ML applications that connect React or Next.js interfaces with FastAPI/Node backends, model workflows and dashboards.",
-      "Built product-focused web apps including Smart AI API Mocking Tool, Nirmaan 2026, Vectorless RAG and DriverPulse with TypeScript-first frontend workflows.",
+      "Built product-focused web apps including Smart AI API Mocking Tool, Vectorless RAG and DriverPulse with TypeScript-first frontend workflows.",
       "Built Stellar payment products with wallet integration, GitHub-triggered bounty releases, Soroban/Rust contracts and proposal/approval payroll flows.",
     ],
     photo: {
@@ -276,44 +276,6 @@ export const projects: Project[] = [
   },
   {
     id: 9,
-    title: "LGTM",
-    tagline: "AI-powered PR review and security platform",
-    description:
-      "Full-stack GitHub-integrated review platform with AST-based repository indexing, code knowledge graph, LLM reviews, security scanning, CI/CD protection, background jobs, and real-time dashboard updates.",
-    image: "/projects/placeholder.png",
-    technologies: [
-      Tech.React,
-      Tech.TypeScript,
-      Tech.Node,
-      Tech.MongoDB,
-      Tech.Redis,
-      Tech.SocketIO,
-    ],
-    github: "https://github.com/Kishan0703/pr_shield",
-    achievements: [
-      "Built repository indexing around AST parsing and a code knowledge graph.",
-      "Connected LLM-backed reviews with GitHub integration, security gates and background queues.",
-      "Added real-time dashboard updates for review and security activity.",
-    ],
-  },
-  {
-    id: 10,
-    title: "Orbit Ledger",
-    tagline: "On-chain payroll infrastructure",
-    description:
-      "Stellar Testnet payroll dApp with wallet integration, live balances, a Rust Soroban treasury contract, proposal/approval/execution payroll flow, multi-signature release, and currency value display.",
-    image: "/projects/placeholder.png",
-    technologies: [Tech.React, Tech.Vite, Tech.Rust, Tech.TypeScript],
-    github: "https://github.com/Kishan0703/Orbit_Ledger",
-    demo: "https://stellarpay.vercel.app/",
-    achievements: [
-      "Built wallet-connected Stellar Testnet payroll flows with live balances.",
-      "Implemented proposal, approval and execution steps around a Soroban treasury contract.",
-      "Added multi-signature release and currency value display for payroll operations.",
-    ],
-  },
-  {
-    id: 11,
     title: "Stellar Bounty Board",
     tagline: "Open-source bounty payments on Stellar",
     description:
@@ -325,45 +287,6 @@ export const projects: Project[] = [
       "Connected GitHub webhook events to bounty payment release logic.",
       "Built Stellar Testnet payment flows for open-source contribution rewards.",
       "Integrated wallet-oriented approval and payout behavior.",
-    ],
-  },
-  {
-    id: 12,
-    title: "Nirmaan 2026",
-    tagline: "Hackathon website and event platform",
-    description:
-      "Design-led national-level student hackathon website covering tracks, timeline, sponsors, submissions, venue, teams, demo-day flow, registration, modal interactions, and motion-driven sections.",
-    image: "/projects/placeholder.png",
-    technologies: [Tech.NextJs, Tech.React, Tech.TypeScript, Tech.Tailwind],
-    github: "https://github.com/Kishan0703/Nirmaan_2026",
-    demo: "https://nirmaan-2026-tau.vercel.app/",
-    achievements: [
-      "Built event pages for tracks, timeline, sponsors, submissions, venue and teams.",
-      "Implemented registration, modal interactions and demo-day flow.",
-      "Used motion-driven sections while keeping the site structured around event operations.",
-    ],
-  },
-  {
-    id: 13,
-    title: "AgriTech AI",
-    tagline: "Smart farming assistant",
-    description:
-      "Smart farming platform combining multilingual AI assistance, crop advisory, plant disease detection, fertilizer and irrigation planning, real-time weather alerts, and separate web/API/ML services.",
-    image: "/projects/placeholder.png",
-    technologies: [
-      Tech.React,
-      Tech.Node,
-      Tech.Express,
-      Tech.MongoDB,
-      Tech.Flask,
-      Tech.TensorFlow,
-      Tech.PyTorch,
-    ],
-    github: "https://github.com/Kishan0703/agri-smart-inception",
-    achievements: [
-      "Combined multilingual AI assistance with crop advisory workflows.",
-      "Added plant disease detection, fertilizer planning, irrigation planning and weather alerts.",
-      "Separated web, API and ML services for a complete product structure.",
     ],
   },
 ];
@@ -436,7 +359,7 @@ export const aboutData: AboutData = {
   ],
 
   stats: {
-    projects: 13,
+    projects: 9,
     githubContributions: 0,
   },
 };
