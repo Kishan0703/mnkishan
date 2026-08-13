@@ -13,7 +13,6 @@ const siteUrl = "https://www.kishanmn.dev/";
 const siteTitle = "Kishan MN | Software Engineer Portfolio";
 const siteDescription =
   "Portfolio of Kishan MN, a software engineer building AI tools, machine learning systems, full-stack products, analytics platforms, and blockchain infrastructure.";
-const previewImage = "/projects/Portfolio.png";
 const sameAs = [
   "https://github.com/Kishan0703/",
   "https://www.linkedin.com/in/kishan-mn-898b67334",
@@ -74,20 +73,11 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Kishan MN Portfolio",
     type: "website",
-    images: [
-      {
-        url: previewImage,
-        width: 2541,
-        height: 1337,
-        alt: "Kishan MN portfolio preview",
-      },
-    ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: siteTitle,
     description: siteDescription,
-    images: [previewImage],
   },
 };
 

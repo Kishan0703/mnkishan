@@ -2,7 +2,7 @@
 
 A highly interactive personal portfolio website blending a hand-drawn sketchbook aesthetic with a dynamic 3D interactive desk workspace.
 
-This portfolio is built using **Next.js (App Router)**, **React**, **Three.js (React Three Fiber)**, **TypeScript**, and **Tailwind CSS**. It showcases projects, experience, skills, and resume details through highly immersive, tactile, and responsive user interfaces.
+This portfolio is built using **Next.js (App Router)**, **React**, **Three.js (React Three Fiber)**, **TypeScript**, and **Tailwind CSS**. It showcases projects, skills, and resume details through highly immersive, tactile, and responsive user interfaces.
 
 ---
 
@@ -24,11 +24,6 @@ This portfolio is built using **Next.js (App Router)**, **React**, **Three.js (R
 - **Power Button**: Toggles the screen state on and off.
 - **Export PDF**: Action bar trigger to download a formatted PDF resume (`resume.pdf`).
 - **Layout**: Clean grid-based view of Education, Experience, Honors, Projects, and Tech Stack.
-
-### 🎟️ Perforated Ticket Stack Experience (`Ticket.tsx`)
-- A ticket-stub styled card component displaying internship and role highlights.
-- Features detailed retro perforations and notches.
-- **Dynamic Stack**: Rendered as a stacked deck that cycles to the next card with subtle rotation and scaling animations on click.
 
 ### ✏️ Hand-Drawn Sketchbook Theme
 - Scattered doodles, paper textures, stickers (e.g., Cat, Rabbit, Flower, Godzilla).
@@ -59,7 +54,6 @@ src/
 │   ├── 3-D/              # Three.js 3D Canvas Scene
 │   ├── IPad/             # Interactive iPad resume viewer & data
 │   ├── Models/           # 3D GLTF Model loaders (Ash.glb)
-│   ├── Ticket/           # Custom perforated tickets for Experience section
 │   ├── TV/               # CRT TV components, DVD controls, DVD Tray, Carousel
 │   └── ui/               # General UI elements (Doodles, Tags, Headers, Navbar)
 ├── context/              # Global React Contexts (e.g., LoadingContext)
@@ -75,8 +69,8 @@ src/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Angadveer185/portfolio.git
-   cd portfolio
+   git clone https://github.com/Kishan0703/portfolio_animae.git
+   cd portfolio_animae
    ```
 
 2. **Install dependencies**:
