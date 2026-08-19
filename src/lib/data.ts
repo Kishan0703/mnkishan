@@ -117,6 +117,43 @@ export const SKILL_DATA: SkillEntry[] = [
 export const projects: Project[] = [
   {
     id: 1,
+    title: "ChessCoach",
+    tagline: "Local-first desktop and web chess coach",
+    description:
+      "Local-first chess coaching app that runs as both a desktop app and a web app, importing Chess.com games into SQLite, analyzing positions with Stockfish, and using local or hosted LLMs to explain the strategic reasons behind key moments.",
+    image: "/projects/placeholder.png",
+    technologies: [
+      Tech.Python,
+      Tech.FastAPI,
+      Tech.React,
+      Tech.TypeScript,
+      Tech.SQLite,
+      Tech.HuggingFace,
+    ],
+    github: "https://github.com/Kishan0703/chess_analyser",
+    achievements: [
+      "Coordinated a FastAPI backend, React analysis UI and pywebview desktop shell.",
+      "Ran a local Stockfish UCI process with deterministic chess feature extraction and background analysis jobs.",
+      "Added local and hosted model-provider fallbacks for coaching explanations beyond raw engine lines.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Unlearn-LLM",
+    tagline: "Approximate LLM unlearning",
+    description:
+      "Implementation of an approximate LLM unlearning pipeline exploring targeted knowledge removal through reinforce, translate, relabel, and unlearn stages with GPU and CPU-friendly paths.",
+    image: "/projects/placeholder.png",
+    technologies: [Tech.Python, Tech.PyTorch, Tech.HuggingFace, Tech.Jupyter],
+    github: "https://github.com/Kishan0703/unlearn-llm",
+    achievements: [
+      "Implemented the unlearning flow based on the Who's Harry Potter approach.",
+      "Built reinforcement, anchor extraction, generic-label generation and unlearning stages.",
+      "Supported GPU and CPU-friendly paths for experimentation.",
+    ],
+  },
+  {
+    id: 3,
     title: "UPI Risk Sentinel",
     tagline: "Fraud detection and risk intelligence",
     description:
@@ -137,22 +174,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 2,
-    title: "Unlearn-LLM",
-    tagline: "Approximate LLM unlearning",
-    description:
-      "Implementation of an approximate LLM unlearning pipeline exploring targeted knowledge removal through reinforce, translate, relabel, and unlearn stages with GPU and CPU-friendly paths.",
-    image: "/projects/placeholder.png",
-    technologies: [Tech.Python, Tech.PyTorch, Tech.HuggingFace, Tech.Jupyter],
-    github: "https://github.com/Kishan0703/unlearn-llm",
-    achievements: [
-      "Implemented the unlearning flow based on the Who's Harry Potter approach.",
-      "Built reinforcement, anchor extraction, generic-label generation and unlearning stages.",
-      "Supported GPU and CPU-friendly paths for experimentation.",
-    ],
-  },
-  {
-    id: 3,
+    id: 4,
     title: "Aadhaar Demographics Analysis",
     tagline: "UIDAI enrollment analytics",
     description:
@@ -175,7 +197,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Vectorless RAG",
     tagline: "Tree-based document Q&A",
     description:
@@ -196,7 +218,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Smart AI API Mocking Tool",
     tagline: "Natural-language API mock generator",
     description:
@@ -208,27 +230,6 @@ export const projects: Project[] = [
       "Turned plain-language endpoint descriptions into structured API schemas.",
       "Generated synthetic JSON, live mock endpoints, CRUD behavior and validation flows.",
       "Added chaos-mode failures to help frontend teams test unstable API states.",
-    ],
-  },
-  {
-    id: 6,
-    title: "ChessCoach",
-    tagline: "AI chess analysis and coaching",
-    description:
-      "Local chess analysis app that imports Chess.com games, stores analysis in SQLite, evaluates moves with Stockfish, and uses LLMs to turn engine lines into practical coaching reports.",
-    image: "/projects/placeholder.png",
-    technologies: [
-      Tech.Python,
-      Tech.FastAPI,
-      Tech.React,
-      Tech.TypeScript,
-      Tech.SQLite,
-    ],
-    github: "https://github.com/Kishan0703/chess_analyser",
-    achievements: [
-      "Imported Chess.com games and persisted analysis locally in SQLite.",
-      "Evaluated moves with Stockfish and transformed engine lines into readable coaching reports.",
-      "Built a local FastAPI and React workflow for reviewing games with context.",
     ],
   },
   {
