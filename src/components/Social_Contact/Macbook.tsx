@@ -39,11 +39,21 @@ function AppIcon({
   children: React.ReactNode;
   href: string;
 }) {
+  const isMailto = href.startsWith("mailto:");
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (isMailto) {
+      e.preventDefault();
+      window.location.href = href;
+    }
+  };
+
   return (
     <a
       href={href}
-      target={href.startsWith("mailto:") ? undefined : "_blank"}
-      rel={href.startsWith("mailto:") ? undefined : "noreferrer"}
+      onClick={handleClick}
+      target={isMailto ? undefined : "_blank"}
+      rel={isMailto ? undefined : "noreferrer"}
       aria-label={label}
       className="group flex w-full max-w-44 cursor-pointer items-center gap-2 border-2 border-[#1e1e1e] bg-[#fff5e8] px-2.5 py-2 text-[#1e1e1e] shadow-[3px_3px_0_#e25543] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-bg-tertiary focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4e0cc] focus-visible:outline-none md:-rotate-1 md:flex-row"
     >
