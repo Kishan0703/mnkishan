@@ -12,8 +12,8 @@ function IPad() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume/Kishan_MN_resume.pdf";
-    link.download = "Kishan_MN_resume.pdf";
+    link.href = "/resume/Kishan_MN.docx";
+    link.download = "Kishan_MN.docx";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
