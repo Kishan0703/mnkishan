@@ -1,103 +1,135 @@
-# 🎨 Interactive Sketchbook & Retro Desk Portfolio
+# Interactive Sketchbook & Retro Desk Portfolio
 
-A highly interactive personal portfolio website blending a hand-drawn sketchbook aesthetic with a dynamic 3D interactive desk workspace.
+A highly interactive personal portfolio website blending a hand-drawn sketchbook/whiteboard aesthetic with a dynamic 3D workspace, retro hardware UIs, and tactile micro-interactions.
 
-This portfolio is built using **Next.js (App Router)**, **React**, **Three.js (React Three Fiber)**, **TypeScript**, and **Tailwind CSS**. It showcases projects, skills, and resume details through highly immersive, tactile, and responsive user interfaces.
-
----
-
-## ✨ Immersive Interactive Features
-
-### 🖥️ 3D Desk Workspace (`Scene.tsx`)
-- Rendered using `@react-three/fiber` and `@react-three/drei`.
-- Loads a custom-modeled 3D workspace desk (`Ash.glb`) that users can rotate and inspect using smooth **OrbitControls** and responsive loading/spawn animations.
-
-### 📺 Retro CRT TV Project Showcase (`ProjectShowcase.tsx`)
-- A physical-looking, interactive retro TV and DVD player interface.
-- **Controls**: Interactive Play/Pause, Next/Previous channel, Stop, and Eject buttons.
-- **DVD Tray**: Opens and closes to select different projects.
-- **Cassette Tape & Vol Knob**: Visual animations and state changes.
-- **CRT Screen Shader**: Simulates vintage scanlines, curved displays, and flicker effects using Tailwind and custom React states.
-
-### 📱 Realistic iPad Resume Viewer (`IPad.tsx`)
-- An interactive digital iPad replica complete with hardware buttons.
-- **Power Button**: Toggles the screen state on and off.
-- **Export PDF**: Action bar trigger to download a formatted PDF resume (`resume.pdf`).
-- **Layout**: Clean grid-based view of Education, Experience, Honors, Projects, and Tech Stack.
-
-### ✏️ Hand-Drawn Sketchbook Theme
-- Scattered doodles, paper textures, stickers (e.g., Cat, Rabbit, Flower, Godzilla).
-- Clean, hand-drawn typography (e.g., `Gochi Hand`, `Bree Serif`, etc.) combined with modern layouts.
-- Custom custom UI components (from the `sketchbook-ui` library).
+Built with **Next.js (App Router)**, **React**, **Three.js (React Three Fiber)**, **TypeScript**, and **Tailwind CSS**.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-- **Framework**: Next.js 16 (App Router)
-- **UI Logic**: React 19 & TypeScript
-- **Styling**: Tailwind CSS v4 & custom animations
-- **3D Rendering**: Three.js, React Three Fiber (`@react-three/fiber`), React Three Drei (`@react-three/drei`)
-- **Animations**: Framer Motion & custom CSS transitions
-- **Icons**: Lucide React & React Icons
-- **Backend/Forms**: Nodemailer (integrated API contact form)
-- **Component Library**: Sketchbook UI
+### Landing & Navigation (`src/sections/Landing.tsx`)
+- Hero landing with responsive desktop (`NavBar`) and mobile (`MobileNavbar`) navigation.
+- Loading screen driven by `LoadingContext`.
+
+### Whiteboard About Section (`src/components/Whiteboard/`)
+- Hand-drawn whiteboard theme with doodles, stickers, marker headings, and paper textures.
+- Avatar card with magnetic hover, core abilities, stats, and a mobile carousel.
+
+### Experience & Projects
+- **Experience** (`ExperienceNew.tsx`): ticket-style cards (`ExperienceTicket`).
+- **Projects** (`Projects.tsx`): ticket-based project cards with a dedicated `/projects` page.
+- **GitHub integration** (`src/app/api/github/route.ts`): fetches repo data via the GitHub API.
+
+### Skills (`src/sections/Skills.tsx`)
+- Skill groups rendered from `src/lib/technology.ts` with icon tags.
+
+### Resume (`src/sections/Resume.tsx` + `src/components/IPad/`)
+- Realistic iPad replica with power button, screen states, and PDF export.
+- Grid layout for Education, Experience, Honors, Projects, and Tech Stack.
+- Resume files live in `public/resume/`.
+
+### Contact (`src/sections/Contact.tsx` + `src/app/api/contact/route.ts`)
+- Contact form backed by a Next.js API route using **Nodemailer** (Gmail).
+
+### 3D Desk Workspace (`src/components/3-D/Scene.tsx`)
+- React Three Fiber + Drei scene with a custom desk model (`public/models/`), OrbitControls, and loading/spawn animations.
+
+### Social Devices (`src/components/Social_Contact/`)
+- Interactive iPhone and MacBook widgets for social links.
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
+
+| Area | Tools |
+| --- | --- |
+| Framework | Next.js 16 (App Router), React 19, TypeScript |
+| Styling | Tailwind CSS v4, tw-animate-css, custom animations |
+| 3D | Three.js, `@react-three/fiber`, `@react-three/drei` |
+| Animation | Framer Motion, CSS transitions |
+| UI | sketchbook-ui, shadcn-style components, Lucide / React Icons, Sonner |
+| Forms | Nodemailer via `/api/contact` |
+
+---
+
+## Project Structure
 
 ```text
 src/
-├── app/                  # Next.js App Router entry points & global styles
-├── components/           # Reusable interactive components
-│   ├── 3-D/              # Three.js 3D Canvas Scene
-│   ├── IPad/             # Interactive iPad resume viewer & data
-│   ├── Models/           # 3D GLTF Model loaders (Ash.glb)
-│   ├── TV/               # CRT TV components, DVD controls, DVD Tray, Carousel
-│   └── ui/               # General UI elements (Doodles, Tags, Headers, Navbar)
-├── context/              # Global React Contexts (e.g., LoadingContext)
-├── hooks/                # Custom React hooks (e.g., useDVDPlayer)
-├── lib/                  # Shared data, color constants, and technologies dictionary
-├── styles/               # Global css configurations
-└── types/                # TypeScript type definitions
+├── app/                    # App Router pages & API routes
+│   ├── api/contact/        # Nodemailer contact form endpoint
+│   ├── api/github/         # GitHub repos endpoint
+│   └── projects/           # Projects page
+├── components/
+│   ├── 3-D/                # React Three Fiber canvas scene
+│   ├── IPad/               # iPad resume viewer + resume data/types
+│   ├── Social_Contact/     # iPhone / Macbook social widgets
+│   ├── Whiteboard/         # About-section whiteboard components
+│   ├── projects/           # Experience & project ticket cards
+│   └── ui/                 # NavBar, Doodles, Tags, Loader, etc.
+├── sections/               # Page sections (Landing, About, Skills,
+│                           # Experience, Projects, Resume, Contact, Footer)
+├── context/                # LoadingContext
+├── lib/                    # Data, colors, fonts, icons, utils
+└── types/                  # Shared TypeScript types
+public/
+├── images/  doodles/  icons/  models/  projects/  resume/  skills/
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repository**:
+
    ```bash
-   git clone https://github.com/Kishan0703/portfolio_animae.git
-   cd portfolio_animae
+   git clone https://github.com/Kishan0703/mnkishan.git
+   cd mnkishan
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
-3. **Configure Environment Variables**:
-   Create a `.env.local` file in the root directory and add the following keys for the contact form functionality:
+3. **Configure environment variables**:
+
+   Create a `.env.local` in the project root:
+
    ```env
-   EMAIL_USER=your-email@example.com
-   EMAIL_PASS=your-email-password
-   RECEIVER_EMAIL=your-recipient-email@example.com
+   EMAIL_USER=your-email@gmail.com
+   EMAIL_PASS=your-gmail-app-password
+   GITHUB_TOKEN=your-github-personal-access-token   # optional, raises API rate limits
    ```
 
 4. **Run the development server**:
+
    ```bash
    npm run dev
    ```
 
-5. **Build for production**:
+5. **Production build**:
+
    ```bash
    npm run build
+   npm run start
    ```
 
 ---
 
-## 📄 License
+## Scripts
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run start` | Serve production build |
+| `npm run lint` | Run ESLint |
+
+---
+
+## License
+
+MIT
