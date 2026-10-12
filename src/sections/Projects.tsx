@@ -35,6 +35,38 @@ export default function Projects() {
         rotation={0}
         className="hidden lg:block"
       />
+      <Doodle
+        src="/doodles/Juice.png"
+        width={110}
+        x={87}
+        y={28}
+        rotation={-12}
+        className="hidden lg:block"
+      />
+      <Doodle
+        src="/doodles/Red_Plant.png"
+        width={110}
+        x={6}
+        y={42}
+        rotation={10}
+        className="hidden lg:block"
+      />
+      <Doodle
+        src="/doodles/Rat.png"
+        width={90}
+        x={9}
+        y={72}
+        rotation={-8}
+        className="hidden lg:block"
+      />
+      <Doodle
+        src="/doodles/Red_Search.png"
+        width={90}
+        x={88}
+        y={85}
+        rotation={14}
+        className="hidden lg:block"
+      />
 
       <motion.div
         className="mx-auto w-full max-w-5xl pb-6 sm:pb-8"

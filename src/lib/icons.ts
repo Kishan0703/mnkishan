@@ -35,6 +35,12 @@ import {
   SiNumpy,
   SiChartdotjs,
   SiSocketdotio,
+  SiDjango,
+  SiPostgresql,
+  SiLua,
+  SiGnubash,
+  SiMake,
+  SiPytest,
 } from "react-icons/si";
 
 import {
@@ -44,6 +50,9 @@ import {
   Database,
   BrainCircuit,
   Binary,
+  Scale,
+  Plane,
+  Bot,
 } from "lucide-react";
 
 export const Icons = {
@@ -97,4 +106,14 @@ export const Icons = {
   DBMS: Database,
   DSA: BrainCircuit,
   Algorithms: Binary,
+
+  Django: SiDjango,
+  PostgreSQL: SiPostgresql,
+  Playwright: Plane,
+  Lua: SiLua,
+  Shell: SiGnubash,
+  Make: SiMake,
+  Pytest: SiPytest,
+  ImbalancedLearn: Scale,
+  Eve: Bot,
 };

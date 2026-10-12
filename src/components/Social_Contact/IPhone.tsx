@@ -93,9 +93,8 @@ export default function IPhone({ children }: IPhoneProps) {
                 src="/doodles/CofeeStain.png"
                 alt=""
                 width={160}
-                height={130}
+                height={160}
                 className="pointer-events-none absolute -right-12 bottom-8 z-0 opacity-30"
-                style={{ width: 160, height: "auto" }}
               />
 
               {/* SOCIAL SHORTCUTS GRID */}

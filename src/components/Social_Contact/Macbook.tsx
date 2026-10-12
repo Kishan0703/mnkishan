@@ -142,9 +142,8 @@ export default function Macbook({ children }: MacbookProps) {
                   src="/doodles/CofeeStain.png"
                   alt=""
                   width={220}
-                  height={180}
+                  height={220}
                   className="pointer-events-none absolute -right-10 bottom-0 z-0 opacity-35"
-                  style={{ width: 220, height: "auto" }}
                 />
 
                 {/* SIDE/TOP DOCK: App Shortcuts on Desktop */}

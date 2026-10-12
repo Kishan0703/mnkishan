@@ -1,4 +1,4 @@
-import { SkillEntry, Project, Experience, AboutData } from "@/types/types";
+import { SkillEntry, Project, Experience, OpenSourceContribution, AboutData } from "@/types/types";
 import { Tech } from "@/lib/technology";
 
 export const SKILL_DATA: SkillEntry[] = [
@@ -294,6 +294,25 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "Fintrix",
+    role: "Software Engineering Intern",
+    logo: "/company/Fintrix.png",
+    from: "2026",
+    to: "Present",
+    location: "Remote",
+    description: [
+      "Contributed to backend services and multi-step agentic workflows for Finny, an AI finance-learning assistant that integrates user portfolios, trade history, watchlists, and live market data to deliver context-aware responses.",
+      "Developed and maintained API, database, and background-job components that connect financial data with LLM workflows, including context retrieval and conversation state management.",
+      "Collaborated on testing, debugging, and improving service integrations to support reliable data flow across backend systems and AI-powered features.",
+    ],
+    technologies: [
+      Tech.NextJs,
+      Tech.Eve,
+      Tech.PostgreSQL,
+    ],
+    demo: "https://fintrix.ltd/",
+  },
+  {
     company: "Bitwise Learn",
     role: "Software Development Intern",
     logo: "/company/BitwiseLearn.svg",
@@ -314,6 +333,52 @@ export const experiences: Experience[] = [
       Tech.TypeScript,
       Tech.Docker,
     ],
+  },
+];
+
+export const openSourceContributions: OpenSourceContribution[] = [
+  {
+    title: "NixOS / nix-security-tracker",
+    tagline: "GitHub PR",
+    period: "2026",
+    github: "https://github.com/NixOS/nix-security-tracker/pull/849",
+    description: [
+      "Diagnosed a race between suggestion listing and cache creation that crashed the list view with RelatedObjectDoesNotExist in the NixOS security tracker; filtered uncached suggestions out of the list and made the detail view return 404 instead of 500.",
+      "Fixed notification ordering so users never receive links to pages that aren't ready: moved notification dispatch into cache creation and removed 1 redundant pgpubsub channel and its worker config; added Playwright tests covering both fixes.",
+    ],
+    technologies: [
+      Tech.Python,
+      Tech.Django,
+      Tech.PostgreSQL,
+      Tech.Playwright,
+    ],
+  },
+  {
+    title: "DSKit (ML library)",
+    tagline: "GitHub PR",
+    period: "2026",
+    github: "https://github.com/Programmers-Paradise/DsKit/pull/11",
+    description: [
+      "Added data validation to a data-science toolkit: 3 utilities for schema checks, duplicate analysis and dataset profiling, so bad data is caught before modeling.",
+      "Upgraded model validation to cross-validation reporting mean/std across 7 metrics (plus ROC-AUC and PR-AUC) and built an imbalance module (class weights, SMOTE, threshold tuning); shipped with 34 passing tests and 3 demos.",
+    ],
+    technologies: [
+      Tech.Python,
+      Tech.ScikitLearn,
+      Tech.ImbalancedLearn,
+      Tech.Pytest,
+    ],
+  },
+  {
+    title: "pico-sdl",
+    tagline: "GitHub PR",
+    period: "2026",
+    github: "https://github.com/fsantanna/pico-sdl/pull/109",
+    description: [
+      "Added a --version flag to the pico-lua CLI: prints the version and exits with code 0 without initializing SDL or Lua.",
+      "Iterated through 2 maintainer review rounds (hardcoded version, matched codebase shell style) and added a strict Makefile test that fails the build on wrong output; also added hex integer color support.",
+    ],
+    technologies: [Tech.Lua, Tech.Shell, Tech.Make],
   },
 ];
 

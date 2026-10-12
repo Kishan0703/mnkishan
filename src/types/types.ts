@@ -66,6 +66,22 @@ export interface Experience {
   description: string[];
 
   technologies: Technology[];
+
+  github?: string;
+  demo?: string;
+}
+
+export interface OpenSourceContribution {
+  title: string;
+  tagline: string;
+
+  period: string;
+
+  description: string[];
+
+  technologies: Technology[];
+
+  github?: string;
 }
 
 export interface Ability {

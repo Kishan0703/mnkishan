@@ -246,4 +246,49 @@ export const Tech = {
     icon: Icons.SocketIO,
     color: "#FFFFFF",
   },
+  Django: {
+    name: "Django",
+    icon: Icons.Django,
+    color: "#0C4B33",
+  },
+  PostgreSQL: {
+    name: "PostgreSQL",
+    icon: Icons.PostgreSQL,
+    color: "#4169E1",
+  },
+  Playwright: {
+    name: "Playwright",
+    icon: Icons.Playwright,
+    color: "#2EAD33",
+  },
+  Lua: {
+    name: "Lua",
+    icon: Icons.Lua,
+    color: "#2C2D72",
+  },
+  Shell: {
+    name: "Shell",
+    icon: Icons.Shell,
+    color: "#4EAA25",
+  },
+  Make: {
+    name: "Make",
+    icon: Icons.Make,
+    color: "#6DCCD1",
+  },
+  Pytest: {
+    name: "pytest",
+    icon: Icons.Pytest,
+    color: "#0A9EDC",
+  },
+  ImbalancedLearn: {
+    name: "imbalanced-learn",
+    icon: Icons.ImbalancedLearn,
+    color: "#F59E0B",
+  },
+  Eve: {
+    name: "eve",
+    icon: Icons.Eve,
+    color: "#A78BFA",
+  },
 } as const;

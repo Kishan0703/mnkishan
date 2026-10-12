@@ -8,14 +8,12 @@ import dynamic from "next/dynamic";
 const About = dynamic(() => import("@/sections/About"), { ssr: true });
 const Skills = dynamic(() => import("@/sections/Skills"), { ssr: false });
 const Projects = dynamic(() => import("@/sections/Projects"), { ssr: false });
-const Experience = dynamic(() => import("@/sections/Experience"), {
+const ExperienceNew = dynamic(() => import("@/sections/ExperienceNew"), {
   ssr: false,
 });
 const Resume = dynamic(() => import("@/sections/Resume"), { ssr: false });
 const Contact = dynamic(() => import("@/sections/Contact"), { ssr: false });
 const Footer = dynamic(() => import("@/sections/Footer"), { ssr: true });
-
-const showExperienceSection = false;
 
 export default function Home() {
   return (
@@ -34,8 +32,8 @@ export default function Home() {
         <Landing />
         <About />
         <Skills />
+        <ExperienceNew />
         <Projects />
-        {showExperienceSection ? <Experience /> : null}
         <Resume />
         <Contact />
         <Footer />

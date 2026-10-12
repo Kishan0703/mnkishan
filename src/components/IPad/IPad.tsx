@@ -12,8 +12,8 @@ function IPad() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume/Kishan_MN.docx";
-    link.download = "Kishan_MN.docx";
+    link.href = "/resume/Kishan MN Resume.pdf";
+    link.download = "Kishan MN Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -63,11 +63,11 @@ function IPad() {
           <div className="absolute top-2 right-4 z-30 flex items-center gap-2 text-xs font-semibold text-neutral-600">
             <button
               onClick={handleDownload}
-              className="flex cursor-pointer items-center gap-1.5 rounded-full bg-black/5 px-2.5 py-1 text-[11px] font-medium text-neutral-700 backdrop-blur-sm transition-all hover:bg-black/10 active:scale-95"
-              title="Download resume DOCX"
+              className="flex cursor-pointer items-center gap-1.5 rounded-full bg-neutral-900 px-3 py-1 text-[11px] font-semibold text-white shadow-sm backdrop-blur-sm transition-all hover:bg-neutral-700 active:scale-95 sm:px-3.5 sm:text-xs"
+              title="Download resume PDF"
             >
-              <Download size={12} className="text-neutral-800" />
-              <span className="hidden sm:inline">Download DOCX</span>
+              <Download size={13} />
+              <span>Download Resume</span>
             </button>
           </div>
 
